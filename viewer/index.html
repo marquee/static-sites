@@ -1,0 +1,35 @@
+<style>
+    .SectionPart {
+        max-width: 30em;
+    }
+    .SectionPart.-lede {
+        font-size: 1.3em;
+    }
+</style>
+<p class="SectionPart -lede">
+{% content_object 'lede', %}
+</p>
+
+<p class="SectionPart">
+    {% content_object 'foo', %}
+</p>
+
+<p class="SectionPart">
+    {% content_object 'bar',200 %}
+</p>
+
+<p class="SectionPart">
+    {% content_object 'baz',0,30 %}
+</p>
+
+<p class="SectionPart">
+{% content_object 'intro',0,50 %}
+</p>
+
+<p class="SectionPart" style="float: right">
+{% content_object 'intro',50 %}
+</p>
+
+<p class="SectionPart" style="margin: 0 auto;clear: both">
+{% content_object 'closer', %}
+</p>
